@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     WebView wv;
 
     ArrayList<Entry> entry_chart = new ArrayList<>();
-
+    FrameLayout frameLayout1, frameLayout2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         wv = findViewById(R.id.wv);
 
+        frameLayout1 = findViewById(R.id.framelayout1);
+        frameLayout2 = findViewById(R.id.framelayou2);
 
-        lineChart = findViewById(R.id.lineChart);
+        lineChart = findViewById(R.id.linechart);
 
 
         LineData chartData = new LineData();
@@ -58,10 +61,9 @@ public class MainActivity extends AppCompatActivity {
         lineChart.invalidate();
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                 new InfoFragment()).commit();
-
-
+        frameLayout2.setVisibility(View.INVISIBLE);
 
 
         bnv.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -70,40 +72,37 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.item_con:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                                 new ConFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
-
+                        frameLayout2.setVisibility(View.VISIBLE);
                         break;
                     case R.id.item_info:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                                 new InfoFragment()).commit();
 
                         lineChart.setVisibility(View.VISIBLE);
-
+                        frameLayout2.setVisibility(View.INVISIBLE);
 
 
                         break;
                     case R.id.item_sensor:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                                 new SensorFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
-
+                        frameLayout2.setVisibility(View.VISIBLE);
                         break;
                     case R.id.item_weather:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                                 new WeatherFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
-
+                        frameLayout2.setVisibility(View.INVISIBLE);
 
                 }
 
                 return true;
             }
         });
-
-
-
 
 
     }

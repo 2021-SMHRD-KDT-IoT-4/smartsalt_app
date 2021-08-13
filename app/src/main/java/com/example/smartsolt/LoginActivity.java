@@ -1,12 +1,12 @@
 package com.example.smartsolt;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 String id = edt_id.getText().toString();
                 String pw = edt_pw.getText().toString();
 
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, selectActivity.class);
                 startActivityForResult(intent, LOGIN_REQUEST);
 
 
