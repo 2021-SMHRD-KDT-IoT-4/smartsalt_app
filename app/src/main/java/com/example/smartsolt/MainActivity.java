@@ -3,7 +3,7 @@ package com.example.smartsolt;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,15 +20,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bnv;
-    ImageView cctv;
     LineChart lineChart;
 
+    WebView wv;
 
     ArrayList<Entry> entry_chart = new ArrayList<>();
-
-
-
-
 
 
     @Override
@@ -37,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bnv = findViewById(R.id.bnv);
-        cctv = findViewById(R.id.imageView);
+
+        wv = findViewById(R.id.wv);
+
 
         lineChart = findViewById(R.id.lineChart);
         LineData chartData = new LineData();
@@ -60,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
                 new InfoFragment()).commit();
-        cctv.setVisibility(View.INVISIBLE);
+
+
+
 
         bnv.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -70,14 +70,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.item_con:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
                                 new ConFragment()).commit();
-                        cctv.setVisibility(View.VISIBLE);
                         lineChart.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_info:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
                                 new InfoFragment()).commit();
-                        cctv.setVisibility(View.INVISIBLE);
 
                         lineChart.setVisibility(View.VISIBLE);
 
@@ -87,14 +85,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.item_sensor:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
                                 new SensorFragment()).commit();
-                        cctv.setVisibility(View.VISIBLE);
                         lineChart.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_weather:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
                                 new WeatherFragment()).commit();
-                        cctv.setVisibility(View.VISIBLE);
                         lineChart.setVisibility(View.INVISIBLE);
 
 

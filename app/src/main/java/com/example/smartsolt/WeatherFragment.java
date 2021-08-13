@@ -32,7 +32,7 @@ public class WeatherFragment extends Fragment {
         SharedPreferences spf = getActivity().getSharedPreferences("mySPF", Context.MODE_PRIVATE);
 
         // 1-2. spf에서 값 가져오기
-        String address =spf.getString("adress", "http://192.168.0.17:8080/"); // key:의 url를 가져오고 만약, 없으면 defValue 주소값을 가져와라
+        String address =spf.getString("adress", "http://192.168.0.17:8081/"); // key:의 url를 가져오고 만약, 없으면 defValue 주소값을 가져와라
 
 
         // 2. 설정 변경 (JavaScript 사용가능)
