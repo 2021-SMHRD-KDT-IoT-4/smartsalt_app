@@ -33,19 +33,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="0dp"
@@ -71,5 +58,19 @@
             android:name="com.example.smartsolt.WeatherFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

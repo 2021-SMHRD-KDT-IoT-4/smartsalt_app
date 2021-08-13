@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         lineChart = findViewById(R.id.lineChart);
+
+
         LineData chartData = new LineData();
         // 생산량 데이터 값 받아오기 getTEXT.toString  (꺽은 선 그래프)
         entry_chart.add(new Entry(1, 1));
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         lineChart.invalidate();
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
                 new InfoFragment()).commit();
 
 
@@ -68,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.item_con:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
                                 new ConFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_info:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
                                 new InfoFragment()).commit();
 
                         lineChart.setVisibility(View.VISIBLE);
@@ -83,13 +85,13 @@ public class MainActivity extends AppCompatActivity {
 
                         break;
                     case R.id.item_sensor:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
                                 new SensorFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_weather:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout3,
                                 new WeatherFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
 
