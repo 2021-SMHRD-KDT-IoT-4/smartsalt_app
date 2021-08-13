@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_con"
+        android:icon="@drawable/controls"
+        android:title="제어" />
+    <item
+        android:id="@+id/item_info"
+        android:icon="@drawable/line_chart"
+        android:title="생산정보" />
+    <item
+        android:id="@+id/item_sensor"
+        android:icon="@drawable/humidity"
+        android:title="센서" />
+    <item
+        android:id="@+id/item_weather"
+        android:icon="@drawable/cloudy"
+        android:title="날씨" />
+</menu>
