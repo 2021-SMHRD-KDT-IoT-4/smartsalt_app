@@ -10,12 +10,11 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/wemakeprice_bold"
+        android:fontFamily="@font/nanumsquare_aceb"
         android:gravity="center"
         android:text="생산량"
         android:textSize="24sp"
@@ -41,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_aceb"
                 android:gravity="center"
                 android:text="날짜"
                 android:textSize="20sp" />
@@ -51,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_aceb"
                 android:gravity="center"
                 android:text="일별생산량"
                 android:textSize="20sp" />
@@ -68,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -79,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000kg"
                 android:inputType="textPersonName" />
@@ -95,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -106,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000kg"
                 android:inputType="textPersonName" />
@@ -122,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -133,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000kg"
                 android:inputType="textPersonName" />
@@ -149,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -160,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000kg"
                 android:inputType="textPersonName" />
@@ -176,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_aceb"
                 android:gravity="center"
                 android:text="수확예측날짜"
                 android:textSize="20sp" />
@@ -186,7 +185,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_aceb"
                 android:gravity="center"
                 android:text="염전번호"
                 android:textSize="20sp" />
@@ -203,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -214,7 +213,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000"
                 android:inputType="textPersonName" />
@@ -230,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -241,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000"
                 android:inputType="textPersonName" />
@@ -257,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="MM/YY"
                 android:inputType="textPersonName" />
@@ -268,7 +267,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:fontFamily="@font/wemakeprice_bold"
+                android:fontFamily="@font/nanumsquare_acb"
                 android:gravity="center"
                 android:hint="0000"
                 android:inputType="textPersonName" />

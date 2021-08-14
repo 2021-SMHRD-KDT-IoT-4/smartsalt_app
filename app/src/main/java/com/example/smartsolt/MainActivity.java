@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                 new CctvFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
+                        frameLayout3.setVisibility(View.INVISIBLE);
                         break;
                     case R.id.item_info:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
                         lineChart.setVisibility(View.VISIBLE);
                         frameLayout2.setVisibility(View.INVISIBLE);
-
+                        frameLayout3.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_sensor:
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                                 new CctvFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
+                        frameLayout3.setVisibility(View.INVISIBLE);
                         break;
                     case R.id.item_weather:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayou3,
