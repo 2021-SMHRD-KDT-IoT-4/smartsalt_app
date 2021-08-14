@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     WebView wv;
 
     ArrayList<Entry> entry_chart = new ArrayList<>();
-    FrameLayout frameLayout1, frameLayout2;
+    FrameLayout frameLayout1, frameLayout2, frameLayout3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         frameLayout1 = findViewById(R.id.framelayout1);
         frameLayout2 = findViewById(R.id.framelayou2);
+        frameLayout3 = findViewById(R.id.framelayou3);
 
         lineChart = findViewById(R.id.linechart);
 
@@ -77,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.item_con:
                         changeFragment(new ConSelectFragment());
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayou2,
+                                new CctvFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         break;
@@ -92,14 +95,15 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.item_sensor:
 
                         changeFragment(new SensorSelectFragment());
-
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayou2,
+                                new CctvFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         break;
                     case R.id.item_weather:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayou3,
                                 new WeatherFragment()).commit();
-                        lineChart.setVisibility(View.INVISIBLE);
+                        frameLayout3.setVisibility(View.VISIBLE);
                         frameLayout2.setVisibility(View.INVISIBLE);
 
                 }
