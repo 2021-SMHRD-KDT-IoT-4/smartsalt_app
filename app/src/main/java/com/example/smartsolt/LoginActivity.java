@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 String id = edt_id.getText().toString();
                 String pw = edt_pw.getText().toString();
 
-                Intent intent = new Intent(LoginActivity.this, selectActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivityForResult(intent, LOGIN_REQUEST);
 
 
@@ -50,12 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                     setResult(RESULT_CANCELED, intent);
                 }
                 finish();
-
-
-
-
-
-
 
             }
         });

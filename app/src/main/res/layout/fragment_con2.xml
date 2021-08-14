@@ -2,11 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fl_con"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarSize="12dp"
-    tools:context=".ConFragment">
+    tools:context=".ConFragment2" >
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,13 +36,15 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_con"
+                android:id="@+id/sc_con_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate"
+                android:id="@+id/tv_btnstate_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -70,17 +70,18 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_light"
+                android:id="@+id/sc_light_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate2"
+                android:id="@+id/tv_btnstate2_2"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="24sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -100,17 +101,18 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_wire"
+                android:id="@+id/sc_wire_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate3"
+                android:id="@+id/tv_btnstate3_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="24sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -130,17 +132,18 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_pump2"
+                android:id="@+id/sc_pump2_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate4"
+                android:id="@+id/tv_btnstate4_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="24sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -160,17 +163,18 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_pump1"
+                android:id="@+id/sc_pump1_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate5"
+                android:id="@+id/tv_btnstate5_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="24sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -190,25 +194,18 @@
                 android:textSize="24sp" />
 
             <Switch
-                android:id="@+id/sc_fan"
+                android:id="@+id/sc_fan_2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0" />
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_btnstate6"
+                android:id="@+id/tv_btnstate6_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textSize="24sp" />
+
         </LinearLayout>
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

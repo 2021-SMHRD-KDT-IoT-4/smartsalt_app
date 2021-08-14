@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.Entry;
@@ -61,10 +62,9 @@ public class MainActivity extends AppCompatActivity {
         lineChart.invalidate();
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
-                new InfoFragment()).commit();
-        frameLayout2.setVisibility(View.INVISIBLE);
 
+        frameLayout2.setVisibility(View.INVISIBLE);
+        changeFragment(new InfoFragment());
 
         bnv.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.item_con:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
-                                new ConFragment()).commit();
+                        changeFragment(new ConSelectFragment());
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         break;
@@ -87,8 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
                         break;
                     case R.id.item_sensor:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
-                                new SensorFragment()).commit();
+
+                        changeFragment(new SensorSelectFragment());
+
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         break;
@@ -105,5 +105,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
+
+    }
+    public void changeFragment(Fragment frag){
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
+                frag).commit();
     }
 }

@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fl_sensor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="always"
-    android:scrollbarStyle="insideOverlay"
-    android:scrollbars="vertical"
-    tools:context=".SensorFragment">
+    tools:context=".SensorFragment2" >
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView81"
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/wemakeprice_bold"
                 android:gravity="center"
-                android:text="증발지"
+                android:text="결정지"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -255,6 +244,7 @@
 
                 <TextView
                     android:id="@+id/textView76"
+                    app:layout_constraintWidth_percent="0.5"
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -265,30 +255,18 @@
                     android:outlineProvider="paddedBounds"
                     android:padding="4dp"
                     android:text="바닥열선 온도 설정"
-                    android:textSize="18sp"
-                    app:layout_constraintWidth_percent="0.5" />
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName5"
+                    app:layout_constraintWidth_percent="0.5"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/edge"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    app:layout_constraintWidth_percent="0.5" />
+                    android:inputType="textPersonName" />
 
             </LinearLayout>
-
         </LinearLayout>
-
-
     </ScrollView>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
