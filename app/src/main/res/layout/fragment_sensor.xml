@@ -78,19 +78,26 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
             </LinearLayout>
 
@@ -98,6 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -132,19 +140,26 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
             </LinearLayout>
 
@@ -152,6 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -187,19 +203,26 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
                 <Button
                     android:id="@+id/button13"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
             </LinearLayout>
 
@@ -207,6 +230,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -241,19 +265,26 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
                 <Button
                     android:id="@+id/button16"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
             </LinearLayout>
 
@@ -261,6 +292,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -295,276 +327,34 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
                 <Button
                     android:id="@+id/button17"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:cornerRadius="50dp" />
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
 
-            </LinearLayout>
+            </LinearLayout><![CDATA[
 
-            <TextView
-                android:id="@+id/textView78"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/wemakeprice_bold"
-                android:gravity="center"
-                android:text="결정지"
-                android:textSize="24sp"
-                android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView66"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="실내온도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView70"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="습도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수위"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView73"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수온"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView79"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="실내온도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="습도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수위"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수온"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName3"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName2"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName4"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView76"
-                    android:layout_width="240dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="바닥열선 온도 설정"
-                    android:textSize="18sp"
-                    app:layout_constraintWidth_percent="0.5" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName5"
-                    android:layout_width="80dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    app:layout_constraintWidth_percent="0.5" />
-
-            </LinearLayout>
-
+            =======
+>>>>>>> origin/master
+        ]]>
         </LinearLayout>
 
 
