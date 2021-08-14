@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         lineChart.invalidate();
 
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
+                new InfoFragment()).commit();
+
+        frameLayout2.setVisibility(View.INVISIBLE);
 
         frameLayout2.setVisibility(View.INVISIBLE);
         changeFragment(new InfoFragment());

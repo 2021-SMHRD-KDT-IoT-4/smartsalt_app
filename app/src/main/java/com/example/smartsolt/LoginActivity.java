@@ -12,7 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edt_id, edt_pw;
     Button btn_loginCheck;
-    final int LOGIN_REQUEST = 2000;
+    final int LOGIN_REQUEST = 2002;
 
 
 
