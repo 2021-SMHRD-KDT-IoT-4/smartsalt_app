@@ -1,22 +1,16 @@
 package com.example.smartsolt;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class selectActivity extends AppCompatActivity {
 
     Button btn_1, btn_2;
-
-    final int LOGIN_REQUEST = 2001;
-
-
-
-
-
+    final int LOGIN_REQUEST= 2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,25 +24,12 @@ public class selectActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(selectActivity.this, MainActivity.class);
-                startActivityForResult(intent, LOGIN_REQUEST );
+                Intent intent = new Intent(selectActivity.this, SensorFragment.class);
+                startActivityForResult(intent, LOGIN_REQUEST);
 
 
             }
         });
-
-        btn_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(selectActivity.this, MainActivity.class);
-                startActivityForResult(intent, LOGIN_REQUEST );
-
-
-            }
-        });
-
-
 
 
     }

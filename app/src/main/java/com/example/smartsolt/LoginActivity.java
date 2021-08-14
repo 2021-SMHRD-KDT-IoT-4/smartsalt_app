@@ -12,7 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edt_id, edt_pw;
     Button btn_loginCheck;
-    final int LOGIN_REQUEST = 2000;
+    final int LOGIN_REQUEST = 2002;
 
 
 
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                 String id = edt_id.getText().toString();
                 String pw = edt_pw.getText().toString();
 
-                Intent intent = new Intent(LoginActivity.this, selectActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivityForResult(intent, LOGIN_REQUEST);
 
 

@@ -19,6 +19,12 @@ public class SensorFragment extends Fragment {
 
         // 날씨 웹뷰 ===============================================================================================
 
+
+        //
+
+//        ((MainActivity)getActivity()).changeFragment(new InfoFragment());
+        //
+
         return view;
     }
 }

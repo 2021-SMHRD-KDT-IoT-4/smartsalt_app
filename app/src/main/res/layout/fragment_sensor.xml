@@ -38,7 +38,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -47,53 +47,37 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
                     android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
+                    android:gravity="left|center_vertical"
                     android:outlineProvider="paddedBounds"
                     android:padding="4dp"
                     android:text="실내온도"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView70"
+                    android:id="@+id/textView15"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
+                    android:backgroundTint="#FFFFFF"
                     android:gravity="center"
                     android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="습도"
+                    android:text="00.00"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수위"
-                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    app:cornerRadius="50dp" />
 
-                <TextView
-                    android:id="@+id/textView73"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수온"
-                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    app:cornerRadius="50dp" />
 
             </LinearLayout>
 
@@ -104,14 +88,14 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/textView3"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/wemakeprice_semibold"
                     android:gravity="center"
                     android:outlineProvider="paddedBounds"
-                    android:text="00.00"
+                    android:padding="4dp"
+                    android:text="습도"
                     android:textSize="18sp" />
 
                 <TextView
@@ -125,27 +109,20 @@
                     android:text="00.00"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    app:cornerRadius="50dp" />
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#FFFFFF"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:text="00.00"
-                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    app:cornerRadius="50dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -159,34 +136,6 @@
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="실내온도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
-                    android:gravity="center"
-                    android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="습도"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
                     android:fontFamily="@font/wemakeprice_semibold"
                     android:gravity="center"
                     android:outlineProvider="paddedBounds"
@@ -195,17 +144,30 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView17"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
-                    android:fontFamily="@font/wemakeprice_semibold"
+                    android:backgroundTint="#FFFFFF"
                     android:gravity="center"
                     android:outlineProvider="paddedBounds"
-                    android:padding="4dp"
-                    android:text="수온"
+                    android:text="00.00"
                     android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    app:cornerRadius="50dp" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    app:cornerRadius="50dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -214,37 +176,42 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                <TextView
+                    android:id="@+id/textView4"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:fontFamily="@font/wemakeprice_semibold"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:padding="4dp"
+                    android:text="습도"
+                    android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName"
+                <TextView
+                    android:id="@+id/textView19"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="00.00"
+                    android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName2"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    app:cornerRadius="50dp" />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName4"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    app:cornerRadius="50dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -255,27 +222,40 @@
 
                 <TextView
                     android:id="@+id/textView76"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/edge"
-                    android:backgroundTint="#dbdbdb"
                     android:fontFamily="@font/wemakeprice_semibold"
                     android:gravity="center"
                     android:outlineProvider="paddedBounds"
                     android:padding="4dp"
-                    android:text="바닥열선 온도 설정"
-                    android:textSize="18sp"
-                    app:layout_constraintWidth_percent="0.5" />
+                    android:text="바닥열선 온도"
+                    android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                <TextView
+                    android:id="@+id/tv_20"
                     android:layout_width="80dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/edge"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    app:layout_constraintWidth_percent="0.5" />
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="00.00"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    app:cornerRadius="50dp" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    app:cornerRadius="50dp" />
 
             </LinearLayout>
 

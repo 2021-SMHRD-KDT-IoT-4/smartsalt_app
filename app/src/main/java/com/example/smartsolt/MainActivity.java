@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                 new InfoFragment()).commit();
+
         frameLayout2.setVisibility(View.INVISIBLE);
 
 
