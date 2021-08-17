@@ -5,6 +5,7 @@
     android:id="@+id/fl_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
     android:overScrollMode="always"
     tools:context=".InfoFragment"
     tools:layout_editor_absoluteY="81dp">
@@ -14,11 +15,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquare_aceb"
+        android:fontFamily="@font/nanumsquare_acb"
         android:gravity="center"
         android:text="생산량"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lineChart" />
@@ -39,21 +40,27 @@
                 android:id="@+id/tv_saltnumbering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/nanumsquare_aceb"
+                android:fontFamily="@font/nanumsquare_acr"
                 android:gravity="center"
                 android:text="날짜"
-                android:textSize="20sp" />
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView2134"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/nanumsquare_aceb"
+                android:fontFamily="@font/nanumsquare_acr"
                 android:gravity="center"
                 android:text="일별생산량"
-                android:textSize="20sp" />
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -174,21 +181,27 @@
                 android:id="@+id/tv_saltnumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/nanumsquare_aceb"
+                android:fontFamily="@font/nanumsquare_acr"
                 android:gravity="center"
                 android:text="수확예측날짜"
-                android:textSize="20sp" />
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_harvest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/nanumsquare_aceb"
+                android:fontFamily="@font/nanumsquare_acr"
                 android:gravity="center"
                 android:text="염전번호"
-                android:textSize="20sp" />
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </TableRow>
 
