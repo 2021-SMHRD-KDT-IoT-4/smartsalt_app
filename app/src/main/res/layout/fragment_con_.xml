@@ -48,6 +48,8 @@
                 android:id="@+id/tv_btnstate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:text="켜짐"
@@ -82,6 +84,8 @@
                 android:id="@+id/tv_btnstate2"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:textSize="24sp" />
@@ -114,6 +118,8 @@
                 android:id="@+id/tv_btnstate3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:textSize="24sp" />
@@ -146,6 +152,8 @@
                 android:id="@+id/tv_btnstate4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:textSize="24sp" />
@@ -178,6 +186,8 @@
                 android:id="@+id/tv_btnstate5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:textSize="24sp" />
@@ -210,6 +220,8 @@
                 android:id="@+id/tv_btnstate6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
                 android:textSize="24sp" />

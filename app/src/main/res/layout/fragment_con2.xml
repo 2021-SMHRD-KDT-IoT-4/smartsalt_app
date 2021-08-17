@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarSize="12dp"
     tools:context=".ConFragment2" >
 
     <LinearLayout
@@ -40,9 +41,7 @@
                 android:id="@+id/sc_con_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:gravity="center"
-                android:textSize="24sp" />
+                android:layout_weight="0"/>
 
             <TextView
                 android:id="@+id/tv_btnstate_2"
@@ -76,7 +75,7 @@
                 android:id="@+id/sc_light_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:layout_weight="0" />
 
             <TextView
                 android:id="@+id/tv_btnstate2_2"
@@ -109,7 +108,7 @@
                 android:id="@+id/sc_wire_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:layout_weight="0" />
 
             <TextView
                 android:id="@+id/tv_btnstate3_2"
@@ -142,7 +141,7 @@
                 android:id="@+id/sc_pump2_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:layout_weight="0" />
 
             <TextView
                 android:id="@+id/tv_btnstate4_2"
@@ -175,7 +174,7 @@
                 android:id="@+id/sc_pump1_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:layout_weight="0" />
 
             <TextView
                 android:id="@+id/tv_btnstate5_2"
@@ -208,7 +207,7 @@
                 android:id="@+id/sc_fan_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:layout_weight="0" />
 
             <TextView
                 android:id="@+id/tv_btnstate6_2"

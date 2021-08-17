@@ -2,6 +2,7 @@ package com.example.smartsolt;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +34,7 @@ public class ConFragment2 extends Fragment {
         sc_fan_2 = view.findViewById(R.id.sc_fan_2);
 
 
-        tv_btnstate_2 = view.findViewById(R.id.tv_btnstate);
+        tv_btnstate_2 = view.findViewById(R.id.tv_btnstate_2);
         tv_btnstate2_2 = view.findViewById(R.id.tv_btnstate2_2);
         tv_btnstate3_2 = view.findViewById(R.id.tv_btnstate3_2);
         tv_btnstate4_2 = view.findViewById(R.id.tv_btnstate4_2);
@@ -49,9 +50,56 @@ public class ConFragment2 extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+                    sc_light_2.setChecked(isChecked);
+                    sc_fan_2.setChecked(isChecked);
+                    sc_pump1_2.setChecked(isChecked);
+                    sc_pump2_2.setChecked(isChecked);
+                    sc_wire_2.setChecked(isChecked);
+
                     tv_btnstate_2.setText("켜짐");
+                    tv_btnstate_2.setTextColor(Color.rgb(69,200,74));
+
+                    tv_btnstate2_2.setText("켜짐");
+                    tv_btnstate2_2.setTextColor(Color.rgb(69,200,74));
+
+                    tv_btnstate3_2.setText("켜짐");
+                    tv_btnstate3_2.setTextColor(Color.rgb(69,200,74));
+
+                    tv_btnstate4_2.setText("켜짐");
+                    tv_btnstate4_2.setTextColor(Color.rgb(69,200,74));
+
+                    tv_btnstate5_2.setText("켜짐");
+                    tv_btnstate5_2.setTextColor(Color.rgb(69,200,74));
+
+                    tv_btnstate6_2.setText("켜짐");
+                    tv_btnstate6_2.setTextColor(Color.rgb(69,200,74));
+
                 }else{
+                    sc_light_2.setChecked(false);
+                    sc_fan_2.setChecked(false);
+                    sc_pump1_2.setChecked(false);
+                    sc_pump2_2.setChecked(false);
+                    sc_wire_2.setChecked(false);
+
+
                     tv_btnstate_2.setText("꺼짐");
+                    tv_btnstate_2.setTextColor(Color.rgb(220,0,0));
+
+                    tv_btnstate2_2.setText("꺼짐");
+                    tv_btnstate2_2.setTextColor(Color.rgb(220,0,0));
+
+                    tv_btnstate3_2.setText("꺼짐");
+                    tv_btnstate3_2.setTextColor(Color.rgb(220,0,0));
+
+                    tv_btnstate4_2.setText("꺼짐");
+                    tv_btnstate4_2.setTextColor(Color.rgb(220,0,0));
+
+                    tv_btnstate5_2.setText("꺼짐");
+                    tv_btnstate5_2.setTextColor(Color.rgb(220,0,0));
+
+                    tv_btnstate6_2.setText("꺼짐");
+                    tv_btnstate6_2.setTextColor(Color.rgb(220,0,0));
+
                 }
                 editor.putBoolean("con_2",isChecked).commit();
 
