@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     EditText edt_id, edt_pw;
-    Button btn_loginCheck;
+    Button btn_loginCheck, btn_ToJoin;
     final int LOGIN_REQUEST = 2002;
 
 
@@ -25,6 +25,17 @@ public class LoginActivity extends AppCompatActivity {
         edt_id = findViewById(R.id.edt_id);
         edt_pw = findViewById(R.id.edt_pw);
         btn_loginCheck = findViewById(R.id.btn_loginCheck);
+        btn_ToJoin = findViewById(R.id.btn_ToJoin);
+
+
+        btn_ToJoin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn_loginCheck.setOnClickListener(new View.OnClickListener() {
             @Override
