@@ -3,27 +3,14 @@ package com.example.smartsolt;
 public class ZlistVO {
 
     private String tv_z_numbering;
-    private String tv_z_name;
-    private String tv_z_indoor_temp;
-    private String btn_move_con;
-    private String btn_move_sen;
-
     private String z_salinity;
+    private String tv_z_indoor_temp;
     private String z_indoor_humid;
     private String z_water_temp;
     private String z_wire_temp;
     private String z_water_high;
     private String z_place_size;
     private String z_pump_move;
-
-
-    public ZlistVO(String tv_z_numbering, String tv_z_name, String tv_z_indoor_temp, String btn_move_con, String btn_move_sen) {
-        this.tv_z_numbering = tv_z_numbering;
-        this.tv_z_name = tv_z_name;
-        this.tv_z_indoor_temp = tv_z_indoor_temp;
-        this.btn_move_con = btn_move_con;
-        this.btn_move_sen = btn_move_sen;
-    }
 
     public ZlistVO(String tv_z_numbering, String tv_z_indoor_temp, String z_salinity, String z_indoor_humid, String z_water_temp, String z_wire_temp, String z_water_high, String z_place_size, String z_pump_move) {
         this.tv_z_numbering = tv_z_numbering;
@@ -45,13 +32,7 @@ public class ZlistVO {
         this.tv_z_numbering = tv_z_numbering;
     }
 
-    public String getTv_z_name() {
-        return tv_z_name;
-    }
 
-    public void setTv_z_name(String tv_z_name) {
-        this.tv_z_name = tv_z_name;
-    }
 
     public String getTv_z_indoor_temp() {
         return tv_z_indoor_temp;
@@ -61,21 +42,8 @@ public class ZlistVO {
         this.tv_z_indoor_temp = tv_z_indoor_temp;
     }
 
-    public String getBtn_move_con() {
-        return btn_move_con;
-    }
 
-    public void setBtn_move_con(String btn_move_con) {
-        this.btn_move_con = btn_move_con;
-    }
 
-    public String getBtn_move_sen() {
-        return btn_move_sen;
-    }
-
-    public void setBtn_move_sen(String btn_move_sen) {
-        this.btn_move_sen = btn_move_sen;
-    }
 
     public String getZ_salinity() {
         return z_salinity;
