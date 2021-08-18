@@ -77,6 +77,7 @@ public class JoinActivity extends AppCompatActivity {
                         Map<String, String> params = new HashMap<>();
                         params.put("id", id);
                         params.put("pw", pw);
+                        params.put("req", "1");
 
 
                         return params;

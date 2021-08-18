@@ -43,19 +43,13 @@ public class ZlistAdapter extends BaseAdapter {
             convertView = inflater.inflate(layout, null);
         }
 
-        TextView tv_z_numbering = convertView.findViewById(R.id.tv_z_numbering);
-        TextView tv_z_name = convertView.findViewById(R.id.tv_z_name);
-        TextView tv_z_indoor_temp = convertView.findViewById(R.id.tv_z_indoor_temp);
-        TextView btn_move_con = convertView.findViewById(R.id.btn_move_con);
-        TextView btn_move_sen = convertView.findViewById(R.id.btn_move_sen);
+        TextView z_numbering = convertView.findViewById(R.id.tv_z_numbering);
+        TextView z_indoorTemp = convertView.findViewById(R.id.tv_z_indoor_temp);
+        TextView z_waterTemp = convertView.findViewById(R.id.tv_z_water_temp);
 
-        tv_z_numbering.setText(data.get(position).getTv_z_numbering());
-        tv_z_name.setText(data.get(position).getTv_z_name());
-        tv_z_indoor_temp.setText(data.get(position).getTv_z_indoor_temp());
-        btn_move_con.setText(data.get(position).getBtn_move_con());
-        btn_move_sen.setText(data.get(position).getBtn_move_sen());
-
-
+        z_numbering.setText(data.get(position).getTv_z_numbering());
+        z_indoorTemp.setText(data.get(position).getTv_z_indoor_temp());
+        z_waterTemp.setText(data.get(position).getZ_water_temp());
 
         return convertView;
     }
