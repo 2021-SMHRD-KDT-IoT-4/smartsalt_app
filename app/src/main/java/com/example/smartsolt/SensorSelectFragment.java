@@ -27,7 +27,7 @@ public class SensorSelectFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                ((MainActivity)getActivity()).changeFragment(new SensorFragment());
+                ((MainActivity)getActivity()).changeFragment(new ZlistViewFragment());
 
             }
         });

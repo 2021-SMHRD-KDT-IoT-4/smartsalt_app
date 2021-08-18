@@ -41,11 +41,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
-                android:baselineAligned="false"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
@@ -77,7 +77,7 @@
                 <Button
                     android:id="@+id/button"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:backgroundTint="#45C84A"
                     app:cornerRadius="50dp"
@@ -89,7 +89,7 @@
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
@@ -104,9 +104,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -139,7 +138,7 @@
                 <Button
                     android:id="@+id/button11"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:backgroundTint="#45C84A"
                     app:cornerRadius="50dp"
@@ -151,7 +150,7 @@
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
@@ -166,9 +165,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -202,7 +200,7 @@
                 <Button
                     android:id="@+id/button14"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:backgroundTint="#45C84A"
                     app:cornerRadius="50dp"
@@ -214,7 +212,7 @@
                 <Button
                     android:id="@+id/button13"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
@@ -229,9 +227,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -264,7 +261,7 @@
                 <Button
                     android:id="@+id/button15"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:backgroundTint="#45C84A"
                     app:cornerRadius="50dp"
@@ -276,7 +273,7 @@
                 <Button
                     android:id="@+id/button16"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
@@ -291,9 +288,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/edge"
                 android:gravity="center"
@@ -326,7 +322,7 @@
                 <Button
                     android:id="@+id/button18"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:backgroundTint="#45C84A"
                     app:cornerRadius="50dp"
@@ -338,7 +334,7 @@
                 <Button
                     android:id="@+id/button17"
                     android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:backgroundTint="#DD3737"
                     android:text="ㅡ"
                     android:textSize="18sp"
