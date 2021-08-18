@@ -51,7 +51,6 @@
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumsquare_aceb"
-                android:text="켜짐"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -80,7 +79,7 @@
                 android:layout_weight="0" />
 
             <TextView
-                android:id="@+id/tv_btnstate2_2"
+                android:id="@+id/tv_btnstate2"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"

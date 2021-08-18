@@ -52,55 +52,65 @@ public class ConFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    sc_light.setChecked(isChecked);
-                    sc_fan.setChecked(isChecked);
-                    sc_pump1.setChecked(isChecked);
-                    sc_pump2.setChecked(isChecked);
-                    sc_wire.setChecked(isChecked);
+                    sc_light.setEnabled(true);
+                    //sc_light.setChecked(isChecked);
+                    sc_fan.setEnabled(true);
+                    //sc_fan.setChecked(isChecked);
+                    sc_pump1.setEnabled(true);
+                    //sc_pump1.setChecked(isChecked);
+                    sc_pump2.setEnabled(true);
+                    //sc_pump2.setChecked(isChecked);
+                    sc_wire.setEnabled(true);
+                    //sc_wire.setChecked(isChecked);
 
-                    tv_btnstate.setText("켜짐");
+                    tv_btnstate.setText("활성화");
                     tv_btnstate.setTextColor(Color.rgb(69,200,74));
 
-                    tv_btnstate2.setText("켜짐");
-                    tv_btnstate2.setTextColor(Color.rgb(69,200,74));
-
-                    tv_btnstate3.setText("켜짐");
-                    tv_btnstate3.setTextColor(Color.rgb(69,200,74));
-
-                    tv_btnstate4.setText("켜짐");
-                    tv_btnstate4.setTextColor(Color.rgb(69,200,74));
-
-                    tv_btnstate5.setText("켜짐");
-                    tv_btnstate5.setTextColor(Color.rgb(69,200,74));
-
-                    tv_btnstate6.setText("켜짐");
-                    tv_btnstate6.setTextColor(Color.rgb(69,200,74));
+//                    tv_btnstate2.setText("켜짐");
+//                    tv_btnstate2.setTextColor(Color.rgb(69,200,74));
+//
+//                    tv_btnstate3.setText("켜짐");
+//                    tv_btnstate3.setTextColor(Color.rgb(69,200,74));
+//
+//                    tv_btnstate4.setText("켜짐");
+//                    tv_btnstate4.setTextColor(Color.rgb(69,200,74));
+//
+//                    tv_btnstate5.setText("켜짐");
+//                    tv_btnstate5.setTextColor(Color.rgb(69,200,74));
+//
+//                    tv_btnstate6.setText("켜짐");
+//                    tv_btnstate6.setTextColor(Color.rgb(69,200,74));
 
                 }else{
-                    sc_light.setChecked(false);
-                    sc_fan.setChecked(false);
-                    sc_pump1.setChecked(false);
-                    sc_pump2.setChecked(false);
-                    sc_wire.setChecked(false);
+                    sc_light.setEnabled(false);
+                    //sc_light.setChecked(false);
+                    sc_fan.setEnabled(false);
+                    //sc_fan.setChecked(false);
+                    sc_pump1.setEnabled(false);
+                    //sc_pump1.setChecked(false);
+                    sc_pump2.setEnabled(false);
+                    //sc_pump2.setChecked(false);
+                    sc_wire.setEnabled(false);
+                    //sc_wire.setChecked(false);
 
 
-                    tv_btnstate.setText("꺼짐");
+                    tv_btnstate.setText("비활성화");
                     tv_btnstate.setTextColor(Color.rgb(220,0,0));
 
-                    tv_btnstate2.setText("꺼짐");
-                    tv_btnstate2.setTextColor(Color.rgb(220,0,0));
-
-                    tv_btnstate3.setText("꺼짐");
-                    tv_btnstate3.setTextColor(Color.rgb(220,0,0));
-
-                    tv_btnstate4.setText("꺼짐");
-                    tv_btnstate4.setTextColor(Color.rgb(220,0,0));
-
-                    tv_btnstate5.setText("꺼짐");
-                    tv_btnstate5.setTextColor(Color.rgb(220,0,0));
-
-                    tv_btnstate6.setText("꺼짐");
-                    tv_btnstate6.setTextColor(Color.rgb(220,0,0));
+//                    tv_btnstate2.setText("꺼짐");
+//                    tv_btnstate2.setTextColor(Color.rgb(220,0,0));
+//
+//                    tv_btnstate3.setText("꺼짐");
+//                    tv_btnstate3.setTextColor(Color.rgb(220,0,0));
+//
+//                    tv_btnstate4.setText("꺼짐");
+//                    tv_btnstate4.setTextColor(Color.rgb(220,0,0));
+//
+//                    tv_btnstate5.setText("꺼짐");
+//                    tv_btnstate5.setTextColor(Color.rgb(220,0,0));
+//
+//                    tv_btnstate6.setText("꺼짐");
+//                    tv_btnstate6.setTextColor(Color.rgb(220,0,0));
 
                 }
                 editor.putBoolean("con",isChecked).commit();
