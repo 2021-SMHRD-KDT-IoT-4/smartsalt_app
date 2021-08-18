@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
+                        frameLayout2.refreshDrawableState();
                         break;
                     case R.id.item_weather:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayou3,
@@ -113,9 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
 
 
     }
