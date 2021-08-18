@@ -78,6 +78,86 @@ public class ConFragment2 extends Fragment {
 //
 //                    tv_btnstate6_2.setText("켜짐");
 //                    tv_btnstate6_2.setTextColor(Color.rgb(69,200,74));
+                    sc_light_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            if(isChecked){
+                                tv_btnstate2_2.setText("켜짐");
+
+                            }else{
+                                tv_btnstate2_2.setText("꺼짐");
+
+                            }
+                            editor.putBoolean("con2_2", isChecked).commit();
+
+                        }
+                    });
+
+                    sc_wire_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            if(isChecked){
+                                tv_btnstate3_2.setText("켜짐");
+
+                            }else{
+                                tv_btnstate3_2.setText("꺼짐");
+
+                            }
+                            editor.putBoolean("con3_2", isChecked).commit();
+
+                        }
+                    });
+
+                    sc_pump1_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            if(isChecked){
+                                tv_btnstate5_2.setText("켜짐");
+
+                            }else{
+                                tv_btnstate5_2.setText("꺼짐");
+
+                            }
+                            editor.putBoolean("con5_2", isChecked).commit();
+
+                        }
+                    });
+
+                    sc_pump2_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            if(isChecked){
+                                tv_btnstate4_2.setText("켜짐");
+
+                            }else{
+                                tv_btnstate4_2.setText("꺼짐");
+
+                            }
+                            editor.putBoolean("con4_2", isChecked).commit();
+
+                        }
+                    });
+
+                    sc_fan_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                            if(isChecked){
+                                tv_btnstate6_2.setText("켜짐");
+
+                            }else{
+                                tv_btnstate6_2.setText("꺼짐");
+
+                            }
+                            editor.putBoolean("con6_2", isChecked).commit();
+
+                        }
+                    });
+
 
                 }else{
                     sc_light_2.setEnabled(false);
@@ -116,85 +196,6 @@ public class ConFragment2 extends Fragment {
             }
         });
 
-        sc_light_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if(isChecked){
-                    tv_btnstate2_2.setText("켜짐");
-
-                }else{
-                    tv_btnstate2_2.setText("꺼짐");
-
-                }
-                editor.putBoolean("con2_2", isChecked).commit();
-
-            }
-        });
-
-        sc_wire_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if(isChecked){
-                    tv_btnstate3_2.setText("켜짐");
-
-                }else{
-                    tv_btnstate3_2.setText("꺼짐");
-
-                }
-                editor.putBoolean("con3_2", isChecked).commit();
-
-            }
-        });
-
-        sc_pump1_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if(isChecked){
-                    tv_btnstate5_2.setText("켜짐");
-
-                }else{
-                    tv_btnstate5_2.setText("꺼짐");
-
-                }
-                editor.putBoolean("con5_2", isChecked).commit();
-
-            }
-        });
-
-        sc_pump2_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if(isChecked){
-                    tv_btnstate4_2.setText("켜짐");
-
-                }else{
-                    tv_btnstate4_2.setText("꺼짐");
-
-                }
-                editor.putBoolean("con4_2", isChecked).commit();
-
-            }
-        });
-
-        sc_fan_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if(isChecked){
-                    tv_btnstate6_2.setText("켜짐");
-
-                }else{
-                    tv_btnstate6_2.setText("꺼짐");
-
-                }
-                editor.putBoolean("con6_2", isChecked).commit();
-
-            }
-        });
 
 
 
