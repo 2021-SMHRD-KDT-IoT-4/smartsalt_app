@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,35 +53,18 @@ public class ConFragment extends Fragment {
         sc_con.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Log.d("check",isChecked+"");
                 if (isChecked) {
                     sc_light.setEnabled(true);
-                    //sc_light.setChecked(isChecked);
                     sc_fan.setEnabled(true);
-                    //sc_fan.setChecked(isChecked);
                     sc_pump1.setEnabled(true);
-                    //sc_pump1.setChecked(isChecked);
                     sc_pump2.setEnabled(true);
-                    //sc_pump2.setChecked(isChecked);
                     sc_wire.setEnabled(true);
-                    //sc_wire.setChecked(isChecked);
 
                     tv_btnstate.setText("활성화");
                     tv_btnstate.setTextColor(Color.rgb(69,200,74));
 
-//                    tv_btnstate2.setText("켜짐");
-//                    tv_btnstate2.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate3.setText("켜짐");
-//                    tv_btnstate3.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate4.setText("켜짐");
-//                    tv_btnstate4.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate5.setText("켜짐");
-//                    tv_btnstate5.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate6.setText("켜짐");
-//                    tv_btnstate6.setTextColor(Color.rgb(69,200,74));
+
                     sc_light.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -165,34 +149,15 @@ public class ConFragment extends Fragment {
 
                 }else{
                     sc_light.setEnabled(false);
-                    //sc_light.setChecked(false);
                     sc_fan.setEnabled(false);
-                    //sc_fan.setChecked(false);
                     sc_pump1.setEnabled(false);
-                    //sc_pump1.setChecked(false);
                     sc_pump2.setEnabled(false);
-                    //sc_pump2.setChecked(false);
                     sc_wire.setEnabled(false);
-                    //sc_wire.setChecked(false);
 
 
                     tv_btnstate.setText("비활성화");
                     tv_btnstate.setTextColor(Color.rgb(220,0,0));
 
-//                    tv_btnstate2.setText("꺼짐");
-//                    tv_btnstate2.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate3.setText("꺼짐");
-//                    tv_btnstate3.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate4.setText("꺼짐");
-//                    tv_btnstate4.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate5.setText("꺼짐");
-//                    tv_btnstate5.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate6.setText("꺼짐");
-//                    tv_btnstate6.setTextColor(Color.rgb(220,0,0));
 
                 }
                 editor.putBoolean("con",isChecked).commit();
@@ -204,12 +169,29 @@ public class ConFragment extends Fragment {
 
 
 
-        sc_con.setChecked(spf.getBoolean("con", isStateSaved()));
+        sc_con.setChecked(spf.getBoolean("con", false));
         sc_light.setChecked(spf.getBoolean("con2",false));
         sc_wire.setChecked(spf.getBoolean("con3",false));
         sc_pump1.setChecked(spf.getBoolean("con5",false));
         sc_pump2.setChecked(spf.getBoolean("con4",false));
         sc_fan.setChecked(spf.getBoolean("con6",false));
+
+        boolean checkState = spf.getBoolean("con",false);
+
+        if(checkState){
+            sc_light.setEnabled(true);
+            sc_fan.setEnabled(true);
+            sc_pump1.setEnabled(true);
+            sc_pump2.setEnabled(true);
+            sc_wire.setEnabled(true);
+        }else{
+            sc_light.setEnabled(false);
+            sc_fan.setEnabled(false);
+            sc_pump1.setEnabled(false);
+            sc_pump2.setEnabled(false);
+            sc_wire.setEnabled(false);
+
+        }
 
 
         return view;
