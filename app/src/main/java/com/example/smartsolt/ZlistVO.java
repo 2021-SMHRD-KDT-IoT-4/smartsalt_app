@@ -16,6 +16,9 @@ public class ZlistVO {
         this.btn_move_sen = btn_move_sen;
     }
 
+    public ZlistVO(String numbering, String z_salinity, String z_indoor_temp, String z_indoor_humid, String z_water_temp, String z_wire_temp, String z_water_high, String z_place_size, String z_pump_move) {
+    }
+
     public String getTv_z_numbering() {
         return tv_z_numbering;
     }

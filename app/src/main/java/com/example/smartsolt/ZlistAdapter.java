@@ -21,7 +21,7 @@ public class ZlistAdapter extends BaseAdapter {
         this.context = context;
         this.layout = layout;
         this.data = data;
-        inflater = (LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
