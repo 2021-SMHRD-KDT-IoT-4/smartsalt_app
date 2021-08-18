@@ -60,11 +60,11 @@
                     android:fontFamily="@font/nanumsquare_aceb"
                     android:gravity="left|center_vertical"
                     android:outlineProvider="paddedBounds"
-                    android:text="실내온도"
+                    android:text="염도"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/tv_z_salinity_now"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.3"
@@ -121,11 +121,11 @@
                     android:fontFamily="@font/nanumsquare_aceb"
                     android:gravity="left|center_vertical"
                     android:outlineProvider="paddedBounds"
-                    android:text="실내습도"
+                    android:text="실내온도"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/tv_z_indoor_temp_now"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.3"
@@ -183,11 +183,11 @@
                     android:fontFamily="@font/nanumsquare_aceb"
                     android:gravity="left|center_vertical"
                     android:outlineProvider="paddedBounds"
-                    android:text="수위"
+                    android:text="실내습도"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/tv_z_indoor_humid_now"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.3"
@@ -248,7 +248,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/tv_z_water_temp_now"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.3"
@@ -309,7 +309,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/tv_20"
+                    android:id="@+id/tv_z_wire_temp_now"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.3"
@@ -345,7 +345,70 @@
                     app:iconPadding="0dp"
                     app:iconSize="20dp" />
 
-            </LinearLayout><![CDATA[
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edge"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tex0tView76"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:fontFamily="@font/nanumsquare_aceb"
+                    android:gravity="left|center_vertical"
+                    android:outlineProvider="paddedBounds"
+                    android:text="수위정보"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_z_water_high_now"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="00.00"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button180"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#45C84A"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
+
+                <Button
+                    android:id="@+id/b1234"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#DD3737"
+                    android:text="ㅡ"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="50dp"
+                    app:icon="@drawable/minus"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp" />
+
+            </LinearLayout>
+
+            <![CDATA[
 
 
 
@@ -356,12 +419,5 @@
 
 
     </ScrollView>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

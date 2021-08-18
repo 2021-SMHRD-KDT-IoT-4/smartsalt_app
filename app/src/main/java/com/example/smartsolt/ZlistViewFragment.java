@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -35,7 +34,6 @@ public class ZlistViewFragment extends Fragment {
     List<ZlistVO> data;
     RequestQueue requestQueue;
     ZlistAdapter zdapter;
-    Button btn_reset;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,11 +43,9 @@ public class ZlistViewFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_zlist_view, container, false);
 
         lv = view.findViewById(R.id.lv);
-        btn_reset = view.findViewById(R.id.btn_reset);
 
         data = new ArrayList<>();
         zdapter = new ZlistAdapter(getContext(), R.layout.zlist, data);
-
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
@@ -69,6 +65,7 @@ public class ZlistViewFragment extends Fragment {
                             JSONObject json = new JSONObject(response);
 
                             JSONArray json2 = json.getJSONArray("data");
+                            Log.d("data",json2.toString());
                             for (int i = 0; i < json2.length(); i++) {
                                 JSONObject json3 = (JSONObject) json2.get(i);
                                 String numbering = json3.getString("numbering");
@@ -86,6 +83,7 @@ public class ZlistViewFragment extends Fragment {
                                         z_place_size, z_pump_move);
 
                                 data.add(vo);
+                                Log.d("data",data.get(0).getTv_z_indoor_temp());
 
                             }
                             zdapter.notifyDataSetChanged();
@@ -122,6 +120,9 @@ public class ZlistViewFragment extends Fragment {
 
 
         lv.setAdapter(zdapter);
+
+
+
         return view;
 
     }
