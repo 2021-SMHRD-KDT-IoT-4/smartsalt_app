@@ -39,7 +39,7 @@
         android:backgroundTint="#7DBDFE"
         android:fontFamily="@font/nanumsquare_aceb"
         android:gravity="center"
-        android:text="증발지"
+        android:text="결정지"
         app:layout_constraintStart_toEndOf="@+id/tv_k_numbering"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -12,11 +12,12 @@ import androidx.fragment.app.Fragment;
 
 public class SensorFragment extends Fragment {
 
-    ZlistVO vo;
-
+    ZlistVO zvo;
+    KlistVO kvo;
     public SensorFragment(ZlistVO vo) {
-        this.vo = vo;
+        this.zvo = vo;
     }
+    public SensorFragment(KlistVO vo) {this.kvo = vo;}
 
     TextView tv_z_salinity_now, tv_z_indoor_temp_now, tv_z_indoor_humid_now, tv_z_water_temp_now,
     tv_z_wire_temp_now, tv_z_water_high_now;
@@ -62,12 +63,22 @@ public class SensorFragment extends Fragment {
         btn_z_water_high_p = view.findViewById(R.id.btn_z_water_high_p);
         btn_z_water_high_m = view.findViewById(R.id.btn_z_water_high_m);
 
-        tv_z_salinity_now.setText(vo.getZ_salinity_now());
-        tv_z_indoor_temp_now.setText(vo.getZ_indoor_temp_now());
-        tv_z_indoor_humid_now.setText(vo.getZ_indoor_humid_now());
-        tv_z_water_temp_now.setText(vo.getZ_water_temp_now());
-        tv_z_wire_temp_now.setText(vo.getZ_wire_temp_now());
-        tv_z_water_high_now.setText(vo.getZ_water_high_now());
+        if (zvo != null) {
+            tv_z_salinity_now.setText(zvo.getZ_salinity_now());
+            tv_z_indoor_temp_now.setText(zvo.getZ_indoor_temp_now());
+            tv_z_indoor_humid_now.setText(zvo.getZ_indoor_humid_now());
+            tv_z_water_temp_now.setText(zvo.getZ_water_temp_now());
+            tv_z_wire_temp_now.setText(zvo.getZ_wire_temp_now());
+            tv_z_water_high_now.setText(zvo.getZ_water_high_now());
+        }
+        if(kvo != null){
+            tv_z_salinity_now.setText(kvo.getK_salinity_now());
+            tv_z_indoor_temp_now.setText(kvo.getK_indoor_temp_now());
+            tv_z_indoor_humid_now.setText(kvo.getK_indoor_humid_now());
+            tv_z_water_temp_now.setText(kvo.getK_water_temp_now());
+            tv_z_wire_temp_now.setText(kvo.getK_wire_temp_now());
+            tv_z_water_high_now.setText(kvo.getK_water_high_now());
+        }
 
         tv_z_salinity_set.setText(Integer.toString(salinity));
         tv_z_indoor_temp_set.setText("xx");

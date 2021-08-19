@@ -14,11 +14,11 @@ public class KlistAdapter extends BaseAdapter {
 
     Context context;
     int layout;
-    List<ZlistVO> data;
+    List<KlistVO> data;
 
     LayoutInflater inflater;
 
-    public KlistAdapter(Context context, int layout, List<ZlistVO> data){
+    public KlistAdapter(Context context, int layout, List<KlistVO> data){
         this.context = context;
         this.layout = layout;
         this.data = data;
@@ -44,14 +44,14 @@ public class KlistAdapter extends BaseAdapter {
             convertView = inflater.inflate(layout, null);
         }
 
-        TextView z_numbering = convertView.findViewById(R.id.tv_k_numbering);
-        TextView z_indoorTemp = convertView.findViewById(R.id.tv_k_indoor_temp);
-        TextView z_waterTemp = convertView.findViewById(R.id.tv_k_water_temp);
+        TextView k_numbering = convertView.findViewById(R.id.tv_k_numbering);
+        TextView k_indoorTemp = convertView.findViewById(R.id.tv_k_indoor_temp);
+        TextView k_waterTemp = convertView.findViewById(R.id.tv_k_water_temp);
         Button btn_move_sen_1 = convertView.findViewById(R.id.btn_move_sen_1);
 
-        z_numbering.setText(data.get(position).getZ_numbering());
-        z_indoorTemp.setText(data.get(position).getZ_indoor_temp_now());
-        z_waterTemp.setText(data.get(position).getZ_water_temp_now());
+        k_numbering.setText(data.get(position).getK_numbering());
+        k_indoorTemp.setText(data.get(position).getK_indoor_temp_now());
+        k_waterTemp.setText(data.get(position).getK_water_temp_now());
 
         btn_move_sen_1.setOnClickListener(new View.OnClickListener() {
             @Override

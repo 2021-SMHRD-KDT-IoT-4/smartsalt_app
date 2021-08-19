@@ -25,7 +25,23 @@ public class KlistVO {
     private String k_wire_temp_set;
     private String k_water_high_set;
 
-
+    public KlistVO(String k_numbering, String k_daily_prod, String k_harvest, String k_place_size,
+                   String k_auto_mode, String k_node, String k_salinity_now, String k_indoor_temp_now,
+                   String k_indoor_humid_now, String k_water_temp_now, String k_wire_temp_now,
+                   String k_water_high_now) {
+        this.k_numbering = k_numbering;
+        this.k_daily_prod = k_daily_prod;
+        this.k_harvest = k_harvest;
+        this.k_place_size = k_place_size;
+        this.k_auto_mode = k_auto_mode;
+        this.k_node = k_node;
+        this.k_salinity_now = k_salinity_now;
+        this.k_indoor_temp_now = k_indoor_temp_now;
+        this.k_indoor_humid_now = k_indoor_humid_now;
+        this.k_water_temp_now = k_water_temp_now;
+        this.k_wire_temp_now = k_wire_temp_now;
+        this.k_water_high_now = k_water_high_now;
+    }
 
     public String getK_numbering() {
         return k_numbering;
