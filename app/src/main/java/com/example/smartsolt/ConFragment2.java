@@ -51,33 +51,15 @@ public class ConFragment2 extends Fragment {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     sc_light_2.setEnabled(true);
-                    //sc_light_2.setChecked(isChecked);
                     sc_fan_2.setEnabled(true);
-                    //sc_fan_2.setChecked(isChecked);
                     sc_pump1_2.setEnabled(true);
-                    //sc_pump1_2.setChecked(isChecked);
                     sc_pump2_2.setEnabled(true);
-                    //sc_pump2_2.setChecked(isChecked);
                     sc_wire_2.setEnabled(true);
-                    //sc_wire_2.setChecked(isChecked);
 
                     tv_btnstate_2.setText("활성화");
                     tv_btnstate_2.setTextColor(Color.rgb(69,200,74));
 
-//                    tv_btnstate2_2.setText("켜짐");
-//                    tv_btnstate2_2.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate3_2.setText("켜짐");
-//                    tv_btnstate3_2.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate4_2.setText("켜짐");
-//                    tv_btnstate4_2.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate5_2.setText("켜짐");
-//                    tv_btnstate5_2.setTextColor(Color.rgb(69,200,74));
-//
-//                    tv_btnstate6_2.setText("켜짐");
-//                    tv_btnstate6_2.setTextColor(Color.rgb(69,200,74));
+
                     sc_light_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -161,34 +143,16 @@ public class ConFragment2 extends Fragment {
 
                 }else{
                     sc_light_2.setEnabled(false);
-                    //sc_light_2.setChecked(false);
                     sc_fan_2.setEnabled(false);
-                    //sc_fan_2.setChecked(false);
                     sc_pump1_2.setEnabled(false);
-                    //sc_pump1_2.setChecked(false);
                     sc_pump2_2.setEnabled(false);
-                    //sc_pump2_2.setChecked(false);
                     sc_wire_2.setEnabled(false);
-                    //sc_wire_2.setChecked(false);
 
 
                     tv_btnstate_2.setText("비활성화");
                     tv_btnstate_2.setTextColor(Color.rgb(220,0,0));
 
-//                    tv_btnstate2_2.setText("꺼짐");
-//                    tv_btnstate2_2.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate3_2.setText("꺼짐");
-//                    tv_btnstate3_2.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate4_2.setText("꺼짐");
-//                    tv_btnstate4_2.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate5_2.setText("꺼짐");
-//                    tv_btnstate5_2.setTextColor(Color.rgb(220,0,0));
-//
-//                    tv_btnstate6_2.setText("꺼짐");
-//                    tv_btnstate6_2.setTextColor(Color.rgb(220,0,0));
+
 
                 }
                 editor.putBoolean("con_2",isChecked).commit();
@@ -206,7 +170,22 @@ public class ConFragment2 extends Fragment {
         sc_pump2_2.setChecked(spf.getBoolean("con4_2",false));
         sc_fan_2.setChecked(spf.getBoolean("con6_2",false));
 
+        boolean checkState = spf.getBoolean("con_2",false);
 
+        if(checkState){
+            sc_light_2.setEnabled(true);
+            sc_fan_2.setEnabled(true);
+            sc_pump1_2.setEnabled(true);
+            sc_pump2_2.setEnabled(true);
+            sc_wire_2.setEnabled(true);
+        }else{
+            sc_light_2.setEnabled(false);
+            sc_fan_2.setEnabled(false);
+            sc_pump1_2.setEnabled(false);
+            sc_pump2_2.setEnabled(false);
+            sc_wire_2.setEnabled(false);
+
+        }
         return view;
     }
 }
