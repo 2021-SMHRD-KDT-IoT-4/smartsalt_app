@@ -14,7 +14,9 @@ public class InfoFragment extends Fragment {
 
     TableLayout tbl_dailyprod, tbl_predictday;
     Button btn_convert;
-    int cnt = 0;
+    int cnt;
+    int count;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -25,19 +27,26 @@ public class InfoFragment extends Fragment {
         tbl_dailyprod = view.findViewById(R.id.tbl_dailyprod);
         tbl_predictday = view.findViewById(R.id.tbl_predictday);
 
-
+        tbl_predictday.setVisibility(View.GONE);
 
         btn_convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               cnt =+ 1;
-
-               if (cnt%2 == 1){
-                   tbl_dailyprod.getVisibility();
+                 cnt++;
+                count = cnt;
+               if (count%2 == 1){
+                   tbl_dailyprod.setVisibility(View.GONE);
+                   tbl_predictday.setVisibility(View.VISIBLE);
+                   btn_convert.setText("일일생산량 확인");
+               }else if (count%2 == 0){
+                   tbl_dailyprod.setVisibility(View.VISIBLE);
+                   tbl_predictday.setVisibility(View.GONE);
+                   btn_convert.setText("수확예측일 확인");
                }
 
             }
+
         });
 
         return view;
