@@ -14,6 +14,7 @@ public class SensorFragment extends Fragment {
 
     ZlistVO zvo;
     KlistVO kvo;
+    TextView tv_sensor_title;
     public SensorFragment(ZlistVO vo) {
         this.zvo = vo;
     }
@@ -38,6 +39,8 @@ public class SensorFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_sensor, container, false);
 
+        tv_sensor_title = view.findViewById(R.id.tv_sensor_title);
+        
         tv_z_salinity_now = view.findViewById(R.id.tv_z_salinity_now);
         tv_z_indoor_temp_now = view.findViewById(R.id.tv_z_indoor_temp_now);
         tv_z_indoor_humid_now = view.findViewById(R.id.tv_z_indoor_humid_now);
@@ -70,6 +73,8 @@ public class SensorFragment extends Fragment {
             tv_z_water_temp_now.setText(zvo.getZ_water_temp_now());
             tv_z_wire_temp_now.setText(zvo.getZ_wire_temp_now());
             tv_z_water_high_now.setText(zvo.getZ_water_high_now());
+            
+            tv_sensor_title.setText("증발지");
         }
         if(kvo != null){
             tv_z_salinity_now.setText(kvo.getK_salinity_now());
@@ -78,6 +83,7 @@ public class SensorFragment extends Fragment {
             tv_z_water_temp_now.setText(kvo.getK_water_temp_now());
             tv_z_wire_temp_now.setText(kvo.getK_wire_temp_now());
             tv_z_water_high_now.setText(kvo.getK_water_high_now());
+            tv_sensor_title.setText("결정지");
         }
 
         tv_z_salinity_set.setText(Integer.toString(salinity));

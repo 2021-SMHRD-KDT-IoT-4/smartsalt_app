@@ -57,11 +57,9 @@ public class KlistViewFragment extends Fragment {
                     @Override
                     public void onResponse(String response) {
                         try {
-
+                            Log.d("response",response);
                             JSONObject json = new JSONObject(response);
-                            Log.d("json",json.toString());
-                            JSONArray json2 = json.getJSONArray("data");
-                            Log.d("data",json2.toString());
+                            JSONArray json2 = json.getJSONArray("kdata");
                             for (int i = 0; i < json2.length(); i++) {
                                 JSONObject json3 = (JSONObject) json2.get(i);
                                 String numbering = json3.getString("numbering");
