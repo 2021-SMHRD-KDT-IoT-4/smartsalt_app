@@ -62,15 +62,15 @@ public class SensorFragment extends Fragment {
         btn_z_water_high_p = view.findViewById(R.id.btn_z_water_high_p);
         btn_z_water_high_m = view.findViewById(R.id.btn_z_water_high_m);
 
-        tv_z_salinity_now.setText(vo.getZ_salinity());
-        tv_z_indoor_temp_now.setText(vo.getTv_z_indoor_temp());
-        tv_z_indoor_humid_now.setText(vo.getZ_indoor_humid());
-        tv_z_water_temp_now.setText(vo.getZ_water_temp());
-        tv_z_wire_temp_now.setText(vo.getZ_wire_temp());
-        tv_z_water_high_now.setText(vo.getZ_water_high());
+        tv_z_salinity_now.setText(vo.getZ_salinity_now());
+        tv_z_indoor_temp_now.setText(vo.getZ_indoor_temp_now());
+        tv_z_indoor_humid_now.setText(vo.getZ_indoor_humid_now());
+        tv_z_water_temp_now.setText(vo.getZ_water_temp_now());
+        tv_z_wire_temp_now.setText(vo.getZ_wire_temp_now());
+        tv_z_water_high_now.setText(vo.getZ_water_high_now());
 
         tv_z_salinity_set.setText(Integer.toString(salinity));
-        tv_z_indoor_temp_set.setText(vo.getTv_z_indoor_temp());
+        tv_z_indoor_temp_set.setText("xx");
         tv_z_indoor_humid_set.setText(Integer.toString(indoor_humid));
         tv_z_water_temp_set.setText(Integer.toString(water_temp));
         tv_z_wire_temp_set.setText(Integer.toString(wire_temp));

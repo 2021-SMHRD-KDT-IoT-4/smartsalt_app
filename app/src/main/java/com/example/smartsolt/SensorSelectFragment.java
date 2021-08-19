@@ -35,7 +35,7 @@ public class SensorSelectFragment extends Fragment {
         btn_sen2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).changeFragment(new ZlistViewFragment());
+                ((MainActivity)getActivity()).changeFragment(new KlistViewFragment());
             }
         });
 

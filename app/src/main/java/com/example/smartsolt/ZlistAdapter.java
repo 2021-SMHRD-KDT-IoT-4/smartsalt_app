@@ -44,14 +44,14 @@ public class ZlistAdapter extends BaseAdapter {
             convertView = inflater.inflate(layout, null);
         }
 
-        TextView z_numbering = convertView.findViewById(R.id.tv_z_numbering);
-        TextView z_indoorTemp = convertView.findViewById(R.id.tv_z_indoor_temp);
-        TextView z_waterTemp = convertView.findViewById(R.id.tv_z_water_temp);
-        Button btn_move_sen = convertView.findViewById(R.id.btn_move_sen);
+        TextView z_numbering = convertView.findViewById(R.id.tv_k_numbering);
+        TextView z_indoorTemp = convertView.findViewById(R.id.tv_k_indoor_temp);
+        TextView z_waterTemp = convertView.findViewById(R.id.tv_k_water_temp);
+        Button btn_move_sen = convertView.findViewById(R.id.btn_move_sen_1);
 
-        z_numbering.setText(data.get(position).getTv_z_numbering());
-        z_indoorTemp.setText(data.get(position).getTv_z_indoor_temp());
-        z_waterTemp.setText(data.get(position).getZ_water_temp());
+        z_numbering.setText(data.get(position).getZ_numbering());
+        z_indoorTemp.setText(data.get(position).getZ_indoor_temp_now());
+        z_waterTemp.setText(data.get(position).getZ_water_temp_now());
 
         btn_move_sen.setOnClickListener(new View.OnClickListener() {
             @Override

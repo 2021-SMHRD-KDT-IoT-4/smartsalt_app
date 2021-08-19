@@ -69,21 +69,19 @@ public class ZlistViewFragment extends Fragment {
                             for (int i = 0; i < json2.length(); i++) {
                                 JSONObject json3 = (JSONObject) json2.get(i);
                                 String numbering = json3.getString("numbering");
-                                String z_salinity = json3.getString("z_salinity");
-                                String z_indoor_temp = json3.getString("z_indoor_temp");
-                                String z_indoor_humid = json3.getString("z_indoor_humid");
-                                String z_water_temp = json3.getString("z_water_temp");
-                                String z_wire_temp = json3.getString("z_wire_temp");
-                                String z_water_high = json3.getString("z_water_high");
-                                String z_place_size = json3.getString("z_place_size");
-                                String z_pump_move = json3.getString("z_pump_move");
+                                String z_place_size_now = json3.getString("z_place_size");
+                                String z_pump_move_now = json3.getString("z_pump_move");
+                                String z_salinity_now = json3.getString("z_salinity");
+                                String z_indoor_temp_now = json3.getString("z_indoor_temp");
+                                String z_indoor_humid_now = json3.getString("z_indoor_humid");
+                                String z_water_temp_now = json3.getString("z_water_temp");
+                                String z_wire_temp_now = json3.getString("z_wire_temp");
+                                String z_water_high_now = json3.getString("z_water_high");
 
-                                ZlistVO vo = new ZlistVO(numbering, z_salinity, z_indoor_temp,
-                                        z_indoor_humid, z_water_temp, z_wire_temp, z_water_high,
-                                        z_place_size, z_pump_move);
+                                ZlistVO vo = new ZlistVO(numbering, z_place_size_now,z_pump_move_now,z_salinity_now,
+                                        z_indoor_temp_now,z_indoor_humid_now,z_water_temp_now,z_wire_temp_now,z_water_high_now);
 
                                 data.add(vo);
-                                Log.d("data",data.get(0).getTv_z_indoor_temp());
 
                             }
                             zdapter.notifyDataSetChanged();

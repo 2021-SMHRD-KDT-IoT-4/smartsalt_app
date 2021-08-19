@@ -2,87 +2,64 @@ package com.example.smartsolt;
 
 public class ZlistVO {
 
-    private String tv_z_numbering;
-    private String z_salinity;
-    private String tv_z_indoor_temp;
-    private String z_indoor_humid;
-    private String z_water_temp;
-    private String z_wire_temp;
-    private String z_water_high;
+    // 수정불가
+    // numbering은 결정지 or 증발지 확인해주는 ID
+    private String z_numbering;
     private String z_place_size;
     private String z_pump_move;
+    // 센서를 통한 현재 정보 입력
+    private String z_salinity_now;
+    private String z_wire_temp_now;
+    private String z_indoor_temp_now;
+    private String z_indoor_humid_now;
+    private String z_water_temp_now;
+    private String z_water_high_now;
+    // 센서 설정값
+    private String z_salinity_set;
+    private String z_indoor_humid_set;
+    private String z_water_temp_set;
+    private String z_wire_temp_set;
+    private String z_water_high_set;
 
-    public ZlistVO(String tv_z_numbering, String tv_z_indoor_temp, String z_salinity, String z_indoor_humid, String z_water_temp, String z_wire_temp, String z_water_high, String z_place_size, String z_pump_move) {
-        this.tv_z_numbering = tv_z_numbering;
-        this.tv_z_indoor_temp = tv_z_indoor_temp;
-        this.z_salinity = z_salinity;
-        this.z_indoor_humid = z_indoor_humid;
-        this.z_water_temp = z_water_temp;
-        this.z_wire_temp = z_wire_temp;
-        this.z_water_high = z_water_high;
+    public ZlistVO(String z_numbering, String z_place_size, String z_pump_move, String z_salinity_now,
+                   String z_wire_temp_now, String z_indoor_temp_now, String z_indoor_humid_now,
+                   String z_water_temp_now, String z_water_high_now) {
+        this.z_numbering = z_numbering;
         this.z_place_size = z_place_size;
         this.z_pump_move = z_pump_move;
+        this.z_salinity_now = z_salinity_now;
+        this.z_wire_temp_now = z_wire_temp_now;
+        this.z_indoor_temp_now = z_indoor_temp_now;
+        this.z_indoor_humid_now = z_indoor_humid_now;
+        this.z_water_temp_now = z_water_temp_now;
+        this.z_water_high_now = z_water_high_now;
     }
 
-    public String getTv_z_numbering() {
-        return tv_z_numbering;
+    public ZlistVO(String z_numbering, String z_pump_move, String z_salinity_now, String z_wire_temp_now,
+                   String z_indoor_temp_now, String z_indoor_humid_now, String z_water_temp_now,
+                   String z_water_high_now, String z_salinity_set, String z_indoor_humid_set,
+                   String z_water_temp_set, String z_wire_temp_set, String z_water_high_set) {
+        this.z_numbering = z_numbering;
+        this.z_pump_move = z_pump_move;
+        this.z_salinity_now = z_salinity_now;
+        this.z_wire_temp_now = z_wire_temp_now;
+        this.z_indoor_temp_now = z_indoor_temp_now;
+        this.z_indoor_humid_now = z_indoor_humid_now;
+        this.z_water_temp_now = z_water_temp_now;
+        this.z_water_high_now = z_water_high_now;
+        this.z_salinity_set = z_salinity_set;
+        this.z_indoor_humid_set = z_indoor_humid_set;
+        this.z_water_temp_set = z_water_temp_set;
+        this.z_wire_temp_set = z_wire_temp_set;
+        this.z_water_high_set = z_water_high_set;
     }
 
-    public void setTv_z_numbering(String tv_z_numbering) {
-        this.tv_z_numbering = tv_z_numbering;
+    public String getZ_numbering() {
+        return z_numbering;
     }
 
-
-
-    public String getTv_z_indoor_temp() {
-        return tv_z_indoor_temp;
-    }
-
-    public void setTv_z_indoor_temp(String tv_z_indoor_temp) {
-        this.tv_z_indoor_temp = tv_z_indoor_temp;
-    }
-
-
-
-
-    public String getZ_salinity() {
-        return z_salinity;
-    }
-
-    public void setZ_salinity(String z_salinity) {
-        this.z_salinity = z_salinity;
-    }
-
-    public String getZ_indoor_humid() {
-        return z_indoor_humid;
-    }
-
-    public void setZ_indoor_humid(String z_indoor_humid) {
-        this.z_indoor_humid = z_indoor_humid;
-    }
-
-    public String getZ_water_temp() {
-        return z_water_temp;
-    }
-
-    public void setZ_water_temp(String z_water_temp) {
-        this.z_water_temp = z_water_temp;
-    }
-
-    public String getZ_wire_temp() {
-        return z_wire_temp;
-    }
-
-    public void setZ_wire_temp(String z_wire_temp) {
-        this.z_wire_temp = z_wire_temp;
-    }
-
-    public String getZ_water_high() {
-        return z_water_high;
-    }
-
-    public void setZ_water_high(String z_water_high) {
-        this.z_water_high = z_water_high;
+    public void setZ_numbering(String z_numbering) {
+        this.z_numbering = z_numbering;
     }
 
     public String getZ_place_size() {
@@ -99,5 +76,93 @@ public class ZlistVO {
 
     public void setZ_pump_move(String z_pump_move) {
         this.z_pump_move = z_pump_move;
+    }
+
+    public String getZ_salinity_now() {
+        return z_salinity_now;
+    }
+
+    public void setZ_salinity_now(String z_salinity_now) {
+        this.z_salinity_now = z_salinity_now;
+    }
+
+    public String getZ_wire_temp_now() {
+        return z_wire_temp_now;
+    }
+
+    public void setZ_wire_temp_now(String z_wire_temp_now) {
+        this.z_wire_temp_now = z_wire_temp_now;
+    }
+
+    public String getZ_indoor_temp_now() {
+        return z_indoor_temp_now;
+    }
+
+    public void setZ_indoor_temp_now(String z_indoor_temp_now) {
+        this.z_indoor_temp_now = z_indoor_temp_now;
+    }
+
+    public String getZ_indoor_humid_now() {
+        return z_indoor_humid_now;
+    }
+
+    public void setZ_indoor_humid_now(String z_indoor_humid_now) {
+        this.z_indoor_humid_now = z_indoor_humid_now;
+    }
+
+    public String getZ_water_temp_now() {
+        return z_water_temp_now;
+    }
+
+    public void setZ_water_temp_now(String z_water_temp_now) {
+        this.z_water_temp_now = z_water_temp_now;
+    }
+
+    public String getZ_water_high_now() {
+        return z_water_high_now;
+    }
+
+    public void setZ_water_high_now(String z_water_high_now) {
+        this.z_water_high_now = z_water_high_now;
+    }
+
+    public String getZ_salinity_set() {
+        return z_salinity_set;
+    }
+
+    public void setZ_salinity_set(String z_salinity_set) {
+        this.z_salinity_set = z_salinity_set;
+    }
+
+    public String getZ_indoor_humid_set() {
+        return z_indoor_humid_set;
+    }
+
+    public void setZ_indoor_humid_set(String z_indoor_humid_set) {
+        this.z_indoor_humid_set = z_indoor_humid_set;
+    }
+
+    public String getZ_water_temp_set() {
+        return z_water_temp_set;
+    }
+
+    public void setZ_water_temp_set(String z_water_temp_set) {
+        this.z_water_temp_set = z_water_temp_set;
+    }
+
+    public String getZ_wire_temp_set() {
+        return z_wire_temp_set;
+    }
+
+    public void setZ_wire_temp_set(String z_wire_temp_set) {
+        this.z_wire_temp_set = z_wire_temp_set;
+    }
+
+    public String getZ_water_high_set() {
+        return z_water_high_set;
+    }
+
+    public void setZ_water_high_set(String z_water_high_set) {
+        this.z_water_high_set = z_water_high_set;
     }
 }
