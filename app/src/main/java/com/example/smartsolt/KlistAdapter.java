@@ -48,6 +48,8 @@ public class KlistAdapter extends BaseAdapter {
         TextView k_indoorTemp = convertView.findViewById(R.id.tv_k_indoor_temp);
         TextView k_waterTemp = convertView.findViewById(R.id.tv_k_water_temp);
         Button btn_move_sen_1 = convertView.findViewById(R.id.btn_move_sen_1);
+        Button btn_move_con_1 = convertView.findViewById(R.id.btn_move_con_1);
+
 
         k_numbering.setText(data.get(position).getK_numbering());
         k_indoorTemp.setText(data.get(position).getK_indoor_temp_now());
@@ -61,6 +63,7 @@ public class KlistAdapter extends BaseAdapter {
                 ((MainActivity)context).changeFragment(new SensorFragment(data.get(position))); // ★★★★★★★
             }
         });
+
 
         return convertView;
     }
