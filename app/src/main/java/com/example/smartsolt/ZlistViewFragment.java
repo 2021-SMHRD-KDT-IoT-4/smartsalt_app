@@ -42,7 +42,7 @@ public class ZlistViewFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_zlist_view, container, false);
 
-        lv = view.findViewById(R.id.lv);
+        lv = view.findViewById(R.id.zlv);
 
         data = new ArrayList<>();
         zdapter = new ZlistAdapter(getContext(), R.layout.zlist, data);

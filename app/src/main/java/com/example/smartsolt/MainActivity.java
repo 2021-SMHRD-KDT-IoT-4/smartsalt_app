@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     WebView wv;
 
     ArrayList<Entry> entry_chart = new ArrayList<>();
-    FrameLayout frameLayout1, frameLayout2, frameLayout3;
+    FrameLayout frameLayout1, frameLayout2, frameLayout3, frameLayout4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         frameLayout1 = findViewById(R.id.framelayout1);
         frameLayout2 = findViewById(R.id.framelayou2);
         frameLayout3 = findViewById(R.id.framelayou3);
+        frameLayout4 = findViewById(R.id.framelayout4);
 
         lineChart = findViewById(R.id.linechart);
 
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.INVISIBLE);
                         break;
                     case R.id.item_info:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         lineChart.setVisibility(View.VISIBLE);
                         frameLayout2.setVisibility(View.INVISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.INVISIBLE);
 
                         break;
                     case R.id.item_sensor:
@@ -101,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout2.setVisibility(View.VISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.INVISIBLE);
                         frameLayout2.refreshDrawableState();
                         break;
                     case R.id.item_weather:
@@ -108,7 +112,18 @@ public class MainActivity extends AppCompatActivity {
                                 new WeatherFragment()).commit();
                         frameLayout3.setVisibility(View.VISIBLE);
                         frameLayout2.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.INVISIBLE);
+                        break;
+                    case R.id.item_setting:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout4,
+                                new SettingFragment()).commit();
+                        lineChart.setVisibility(View.INVISIBLE);
+                        frameLayout1.setVisibility(View.INVISIBLE);
+                        frameLayout2.setVisibility(View.INVISIBLE);
+                        frameLayout3.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.VISIBLE);
 
+                        break;
                 }
 
                 return true;
@@ -119,6 +134,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void changeFragment(Fragment frag){
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
+                frag).commit();
+    }
+    public void changeFragment2(Fragment frag){
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout4,
                 frag).commit();
     }
 }
