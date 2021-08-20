@@ -66,6 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#7DBDFE"
         android:fontFamily="@font/nanumsquare_aceb"
         android:text="제어"
@@ -76,11 +77,11 @@
         android:id="@+id/btn_move_sen_1"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#7DBDFE"
         android:fontFamily="@font/nanumsquare_aceb"
         android:text="센서"
-        app:layout_constraintEnd_toEndOf="@+id/btn_move_con_1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_move_con_1"
-        app:layout_constraintTop_toBottomOf="@+id/btn_move_con_1" />
+        app:layout_constraintStart_toStartOf="@+id/tv_k_water_temp"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

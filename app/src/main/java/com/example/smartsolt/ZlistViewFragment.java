@@ -40,6 +40,8 @@ public class ZlistViewFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
+
+
         View view = inflater.inflate(R.layout.fragment_zlist_view, container, false);
 
         lv = view.findViewById(R.id.zlv);

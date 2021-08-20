@@ -43,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
         frameLayout3 = findViewById(R.id.framelayou3);
         frameLayout4 = findViewById(R.id.framelayout4);
 
+//        SharedPreferences spf = this.getSharedPreferences("mySPF", Context.MODE_PRIVATE);
+//
+//        SharedPreferences.Editor editor = spf.edit();
+
+
+
+
+
         lineChart = findViewById(R.id.linechart);
 
 

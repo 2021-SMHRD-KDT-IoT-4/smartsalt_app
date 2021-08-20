@@ -1,5 +1,7 @@
 package com.example.smartsolt;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,23 +27,23 @@ public class ConSelectFragment extends Fragment {
         btn_con1 =view.findViewById(R.id.btn_con1);
         btn_con2 =view.findViewById(R.id.btn_con2);
 
-
-
-
+        SharedPreferences spf = getActivity().getSharedPreferences("mySPF", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = spf.edit();
 
         btn_con1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                ((MainActivity)getActivity()).changeFragment(new ConFragment());
-
+                ((MainActivity)getActivity()).changeFragment(new ZlistViewFragment());
+                editor.putString("con_sen","c").commit();
             }
         });
 
         btn_con2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).changeFragment(new ConFragment2());
+                ((MainActivity)getActivity()).changeFragment(new KlistViewFragment());
+                editor.putString("con_sen","c").commit();
             }
         });
 

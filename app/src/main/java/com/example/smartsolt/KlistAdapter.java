@@ -15,7 +15,6 @@ public class KlistAdapter extends BaseAdapter {
     Context context;
     int layout;
     List<KlistVO> data;
-
     LayoutInflater inflater;
 
     public KlistAdapter(Context context, int layout, List<KlistVO> data){
@@ -63,7 +62,12 @@ public class KlistAdapter extends BaseAdapter {
                 ((MainActivity)context).changeFragment(new SensorFragment(data.get(position))); // ★★★★★★★
             }
         });
-
+        btn_move_con_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)context).changeFragment(new ConFragment());
+            }
+        });
 
         return convertView;
     }

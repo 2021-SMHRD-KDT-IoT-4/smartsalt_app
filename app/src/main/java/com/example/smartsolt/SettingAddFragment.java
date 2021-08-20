@@ -3,16 +3,13 @@ package com.example.smartsolt;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+
+import androidx.fragment.app.Fragment;
 
 
 public class SettingAddFragment extends Fragment {
@@ -30,6 +27,8 @@ public class SettingAddFragment extends Fragment {
         et_add_numbering = view.findViewById(R.id.et_z_add_numbering);
         et_add_size = view.findViewById(R.id.et_z_add_size);
         btn_add = view.findViewById(R.id.btn_add_setting);
+
+
         SharedPreferences spf = getActivity().getSharedPreferences("mySPF", Context.MODE_PRIVATE);
 
         SharedPreferences.Editor editor = spf.edit();
