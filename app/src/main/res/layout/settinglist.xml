@@ -15,61 +15,56 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView19"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/nanumsquare_acb"
-            android:gravity="center"
-            android:text="번호"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/nanumsquare_acb"
-            android:gravity="center"
-            android:text="구분"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName" />
-
-        <TextView
             android:id="@+id/textView17"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="@font/nanumsquare_acb"
-            android:gravity="center"
-            android:text="크기"
-            android:textSize="18sp" />
+            android:text="증발지번호" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
+        <TextView
+            android:id="@+id/tv_z_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_z_size_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName" />
+            android:text="증발지크기" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_k_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="결정지번호" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="결정지크기" />
+
+        <TextView
+            android:id="@+id/tv_k_size_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
     </LinearLayout>
 

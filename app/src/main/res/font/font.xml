@@ -4,5 +4,6 @@
         android:fontStyle = "normal"
         android:fontWeight = "400"
         android:font = "@font/wemakeprice_bold"
-        />
+
+    />
 </font-family>

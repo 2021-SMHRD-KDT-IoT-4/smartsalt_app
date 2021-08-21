@@ -1,5 +1,7 @@
 package com.example.smartsolt;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -46,7 +48,9 @@ public class KlistViewFragment extends Fragment {
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         }
+        SharedPreferences spf = getActivity().getSharedPreferences("mySPF", Context.MODE_PRIVATE);
 
+        SharedPreferences.Editor editor = spf.edit();
 
 
         String url = "http://192.168.1.20:8084/Project/GetAll_K_Detail_Info.do";
@@ -113,6 +117,7 @@ public class KlistViewFragment extends Fragment {
             }
         };
         requestQueue.add(request);
+
 
 
         lv.setAdapter(kdapter);
