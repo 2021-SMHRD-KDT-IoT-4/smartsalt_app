@@ -75,7 +75,7 @@ public class SettingFragment extends Fragment {
             requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         }
         ArrayList<KlistVO> result = new ArrayList<KlistVO>();
-        String url = "http://192.168.1.20:8084/Project/GetAll_K_Detail_Info.do";
+        String url = "http://project-student.ddns.net/Salt/GetAll_K_Detail_Info.do";
         StringRequest request = new StringRequest(
                 Request.Method.POST,
                 url,
@@ -145,7 +145,7 @@ public class SettingFragment extends Fragment {
     public ArrayList<ZlistVO> zlist(){
      ArrayList<ZlistVO> result = new ArrayList<ZlistVO>();
 
-        String url = "http://192.168.1.20:8084/Project/GetAll_Z_Detail_Info.do";
+        String url = "http://project-student.ddns.net/Salt/GetAll_Z_Detail_Info.do";
         StringRequest request = new StringRequest(
                 Request.Method.POST,
                 url,

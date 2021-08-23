@@ -55,7 +55,7 @@ public class ZlistViewFragment extends Fragment {
 
 
 
-        String url = "http://192.168.1.20:8084/Project/GetAll_Z_Detail_Info.do";
+        String url = "http://project-student.ddns.net/Salt/GetAll_Z_Detail_Info.do";
         StringRequest request = new StringRequest(
                 Request.Method.POST,
                 url,

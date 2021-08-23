@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     WebView wv;
 
     ArrayList<Entry> entry_chart = new ArrayList<>();
-    FrameLayout frameLayout1, frameLayout2, frameLayout3, frameLayout4;
+    FrameLayout frameLayout1, frameLayout3, frameLayout4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         wv = findViewById(R.id.wv);
 
         frameLayout1 = findViewById(R.id.framelayout1);
-        frameLayout2 = findViewById(R.id.framelayou2);
         frameLayout3 = findViewById(R.id.framelayou3);
         frameLayout4 = findViewById(R.id.framelayout4);
 
@@ -75,31 +74,22 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                 new InfoFragment()).commit();
 
-        frameLayout2.setVisibility(View.INVISIBLE);
-
-        frameLayout2.setVisibility(View.INVISIBLE);
-        changeFragment(new InfoFragment());
-
         bnv.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
                     case R.id.item_con:
-                        changeFragment(new ConSelectFragment());
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayou2,
-                                new CctvFragment()).commit();
+                        changeFragment2(new ConSelectFragment());
                         lineChart.setVisibility(View.INVISIBLE);
-                        frameLayout2.setVisibility(View.VISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
-                        frameLayout4.setVisibility(View.INVISIBLE);
+                        frameLayout4.setVisibility(View.VISIBLE);
                         break;
                     case R.id.item_info:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout1,
                                 new InfoFragment()).commit();
 
                         lineChart.setVisibility(View.VISIBLE);
-                        frameLayout2.setVisibility(View.INVISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
                         frameLayout4.setVisibility(View.INVISIBLE);
 
@@ -107,19 +97,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.item_sensor:
 
                         changeFragment(new SensorSelectFragment());
-                        getSupportFragmentManager().beginTransaction().replace(R.id.framelayou2,
-                                new CctvFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
-                        frameLayout2.setVisibility(View.VISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
                         frameLayout4.setVisibility(View.INVISIBLE);
-                        frameLayout2.refreshDrawableState();
                         break;
                     case R.id.item_weather:
                         getSupportFragmentManager().beginTransaction().replace(R.id.framelayou3,
                                 new WeatherFragment()).commit();
                         frameLayout3.setVisibility(View.VISIBLE);
-                        frameLayout2.setVisibility(View.INVISIBLE);
                         frameLayout4.setVisibility(View.INVISIBLE);
                         break;
                     case R.id.item_setting:
@@ -127,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
                                 new SettingFragment()).commit();
                         lineChart.setVisibility(View.INVISIBLE);
                         frameLayout1.setVisibility(View.INVISIBLE);
-                        frameLayout2.setVisibility(View.INVISIBLE);
                         frameLayout3.setVisibility(View.INVISIBLE);
                         frameLayout4.setVisibility(View.VISIBLE);
 

@@ -65,7 +65,7 @@ public class SettingAddFragment extends Fragment {
             public void onClick(View v) {
                 id = spf.getString("id",null);
 
-                String url = "http://192.168.1.20:8084/Project/InsertSaltern.do";
+                String url = "http://project-student.ddns.net/Salt/InsertSaltern.do";
                 StringRequest request = new StringRequest(
                         Request.Method.POST,
                         url,

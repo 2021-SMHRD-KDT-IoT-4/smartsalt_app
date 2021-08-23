@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/framelayou2" />
+        app:layout_constraintTop_toTopOf="@+id/framelayou3" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv"
         android:layout_width="0dp"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_begin="251dp" />
 
     <FrameLayout
         android:id="@+id/framelayout1"
@@ -50,16 +50,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3">
 
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/framelayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
-    <FrameLayout
-        android:id="@+id/framelayou2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        </FrameLayout>
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/framelayou3"
@@ -75,17 +72,6 @@
             android:name="com.example.smartsolt.WeatherFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/framelayout4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
