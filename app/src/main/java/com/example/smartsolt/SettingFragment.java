@@ -60,9 +60,10 @@ public class SettingFragment extends Fragment {
             SettingVO vo = new SettingVO(zlist_numbering,zlist_size,klist_numbering,klist_size);
             data.add(vo);
         }
-        SettingAdapter adapter = new SettingAdapter(getContext(),R.layout.settinglist,data);
-
-        lv_set.setAdapter(adapter);
+        Log.d("test",data.get(0).getK_numbering()+"");
+//        SettingAdapter adapter = new SettingAdapter(getContext(),R.layout.settinglist,data);
+//
+//        lv_set.setAdapter(adapter);
 
 
         return view;
